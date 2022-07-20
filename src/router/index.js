@@ -4,8 +4,13 @@ import Products from "../views/products/Products.vue";
 import ProductPage from "../views/products/ProductPage.vue";
 import ProductsLayout from "../views/products/ProductsLayout.vue";
 import ProductDetails from "../views/products/ProductDetails.vue";
+import ErrorPage from "../views/ErrorPage.vue";
 
 const routes = [
+  {
+    path: "/*",
+    component: ErrorPage,
+  },
   {
     path: "/",
     name: "home",
