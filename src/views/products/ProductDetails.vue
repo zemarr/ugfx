@@ -73,20 +73,22 @@
           <div class="relative mb-4">
             <p class="mb-4 font-bold text-[19px]">Contact us for pricing</p>
             <button
-              class="email py-2 px-3 bg-[transparent] border-[2px] border-mainBlue rounded-[4px] text-mainBlue text-[17px] block my-2 relative"
+              class="email py-2 px-3 bg-[transparent] border-[2px] border-mainBlue rounded-[4px] text-mainBlue text-[17px] block my-2 relative pulsing"
             >
-              <div
-                class="fill pulsing absolute w-full top-0 left-0 h-full bg-[#1b7ad24d] transition-all duration-500"
-              ></div>
-              <a href="mailto:ugraphix2001@gmail.com">Send an email</a>
+              <a href="mailto:ugraphix2001@gmail.com" class="z-[2]"
+                >Send an email</a
+              >
+              <!-- <div
+                class="fill pulsing absolute w-full top-0 left-0 h-full bg-[#1b7ad24d] transition-all duration-500 z-[1]"
+              ></div> -->
             </button>
             <button
-              class="call-text py-2 px-3 bg-[transparent] border-[2px] border-[#25D366] rounded-[4px] text-[#25D366] text-[17px] block my-2 relative"
+              class="call-text py-2 px-3 bg-[transparent] border-[2px] border-[#25D366] rounded-[4px] text-[#25D366] text-[17px] block my-2 relative pulsing"
             >
-              <div
-                class="fill pulsing absolute w-full top-0 left-0 h-full bg-[#25d3652d] transition-all duration-500"
-              ></div>
-              <a href="tel:+2348094709168">Phone call/WhatsApp</a>
+              <a href="tel:+2348094709168" class="z-[2]">Phone call/WhatsApp</a>
+              <!-- <div
+                class="fill pulsing absolute w-full top-0 left-0 h-full bg-[#25d3652d] transition-all duration-500 z-[1]"
+              ></div> -->
             </button>
           </div>
         </div>
@@ -162,21 +164,21 @@ export default {
 <style scoped>
 @keyframes pulsing {
   from {
-    opacity: 0;
+    transform: scale(1);
   }
   to {
-    opacity: 1;
+    transform: scale(1.03);
   }
 }
 @-webkit-keyframes pulsing {
   from {
-    opacity: 0;
+    transform: scale(1);
   }
   to {
-    opacity: 1;
+    transform: scale(1.03);
   }
 }
 .pulsing {
-  animation: pulsing 500ms linear infinite;
+  animation: pulsing 1000ms linear infinite;
 }
 </style>
