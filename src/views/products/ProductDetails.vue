@@ -10,11 +10,11 @@
         </h1>
       </div>
       <div
-        class="thumbImg h-auto min-h-[250px] w-full mb-3 overflow-hidden rounded-[4px] flex items-start justify-start"
+        class="thumbImg h-auto min-h-[250px] w-full mb-3 overflow-hidden rounded-[4px] flex items-start justify-start md:flex-row flex-col"
       >
         <!-- {{ selectedVariation }} -->
         <div
-          class="left h-screen max-h-[530px] w-[60%] mr-4 overflow-hidden rounded-[4px]"
+          class="left h-screen max-h-[530px] md:w-[60%] w-full md:mr-4 mr-0 mb-10 md:mb-0 overflow-hidden rounded-[4px]"
         >
           <Carousel v-slot="{ currentSlide }">
             <CarouselSlide
@@ -30,13 +30,13 @@
             </CarouselSlide>
           </Carousel>
         </div>
-        <div class="right max-w-[40%]">
+        <div class="right md:max-w-[40%] max-w-full">
           <!-- <h1 class="">{{ selectedVariation.description }}:</h1> -->
           <p class="text-[17px] font-Poppins leading-[30px] mb-4">
             {{ selectedVariation.description }}:
           </p>
+          <!-- {{ selectedVariation }} -->
           <div class="relative mb-4">
-            <!-- <p class="mb-4 font-medium">What do you expect?</p> -->
             <ul
               v-for="(standard, index) in selectedVariation.standards"
               :key="index"
@@ -51,7 +51,6 @@
           </div>
           <div class="relative mb-4">
             <p class="mb-4 font-bold text-[19px]">Properties</p>
-            <!-- {{ selectedVariation }} -->
             <ul>
               <li>
                 <span class="font-bold font-Graphik text-[17px]"
@@ -73,7 +72,6 @@
           </div>
           <div class="relative mb-4">
             <p class="mb-4 font-bold text-[19px]">Contact us for pricing</p>
-            <!-- {{ selectedVariation }} -->
             <button
               class="email py-2 px-3 bg-[transparent] border-[2px] border-mainBlue rounded-[4px] text-mainBlue text-[17px] block my-2 relative"
             >

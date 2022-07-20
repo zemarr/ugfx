@@ -25,7 +25,7 @@
           v-for="(product, i) in allProducts"
           :key="i"
           :to="'/products/' + product.slug"
-          class="product-thumb cursor-pointer flex flex-col rounded-[8px] overflow-hidden hover:shadow-md transition-all duration-500 p-[12px]"
+          class="product-thumb cursor-pointer flex flex-col rounded-[8px] overflow-hidden hover:shadow-md hover:scale-[1.01] transition-all duration-500 p-[12px]"
         >
           <div
             class="thumbImg max-h-[330px] min-h-[250px] h-full w-full mb-3 rounded-[4px] overflow-hidden flex items-start justify-start"
@@ -105,8 +105,8 @@
 
 <script>
 // @ is an alias to /src
-import { allProducts as dummyData } from "@/utils/dums.js";
-import { computed, ref } from "vue";
+// import { allProducts as dummyData } from "@/utils/dums.js";
+import { computed } from "vue";
 import { useRouter } from "vue-router";
 import Carousel from "@/components/Carousel/CarouselWrap.vue";
 import CarouselSlide from "@/components/Carousel/CarouselSlide.vue";
@@ -123,7 +123,6 @@ export default {
   setup() {
     const store = useStore();
     const router = useRouter();
-    const allProductsData = ref(dummyData);
     const allProducts = computed(() => store.state.products);
 
     const getCurrentRouteSlug = router.currentRoute.value.fullPath;
@@ -138,7 +137,6 @@ export default {
     };
     return {
       // viewList,
-      allProductsData,
       // allBanners,
       getBannerUrl,
       allProducts,

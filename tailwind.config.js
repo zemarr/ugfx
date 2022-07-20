@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
         Graphik: ["Graphik", "sans-serif"],
+        ubuntu: ["ubuntu", "sans-serif"],
       },
     },
   },

@@ -11,7 +11,7 @@
         <p
           class="!font-Poppins text-[18px] leading-[30px] font-normal tracking-[-0.6px]"
         >
-          We have high quality selected mica in different variations.
+          We have high quality selected Mica in different variations.
         </p>
       </div>
       <div
@@ -21,7 +21,7 @@
           v-for="(variation, i) in allProductVariations"
           :key="i"
           :to="`/products/${getCurrentRouteSlug}/` + variation.name"
-          class="variation-thumb cursor-pointer flex flex-col rounded-[8px] overflow-hidden hover:shadow-md transition-all duration-500 p-[12px]"
+          class="variation-thumb cursor-pointer flex flex-col rounded-[8px] overflow-hidden hover:shadow-md hover:scale-[1.01] transition-all duration-500 p-[12px]"
         >
           <div
             class="thumbImg max-h-[330px] min-h-[250px] h-full w-full mb-3 rounded-[4px] overflow-hidden flex items-start justify-start"
@@ -90,9 +90,6 @@ export default {
     const currentProductData = ref([]);
     const allProductVariations = ref();
 
-    // const viewDetails = (id) => {
-    //   router.push({ name: "Product Details", params: { details: id } });
-    // };
     const getCurrentRouteSlug = router.currentRoute.value.params.id;
     const getCurrentFullPath = router.currentRoute.value.fullPath;
     console.log(getCurrentFullPath);
