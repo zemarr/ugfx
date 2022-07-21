@@ -9,9 +9,11 @@ export const allProducts = [
       "Mica is found in various parts of the Nigeria, with the major muscovite mica mineral deposits largely found in the Northern part of Nigeria, with reasonable deposits in some parts of the Western parts of Nigeria in places like Ibadan.",
     origins: ["Ogun", "Osun", "Kaduna"],
     slideshow: [
-      require("../assets/images/IMG_scrap_big1.webp"),
+      require("../assets/images/IMG_Bulktwo.webp"),
+      require("../assets/images/IMG_sheet_small1.webp"),
       require("../assets/images/IMG_sheet_big1.webp"),
       require("../assets/images/IMG_scrap_small1.webp"),
+      require("../assets/images/IMG_scrap_big1.webp"),
     ],
     productVariations: [
       {
@@ -30,7 +32,7 @@ export const allProducts = [
           weight: "5kg per packing",
         },
         slideshow: [
-          require("../assets/images/IMG_sheet_big1.jpg"),
+          require("../assets/images/IMG_sheet_big1.webp"),
           require("../assets/images/IMG_sheet_big2.webp"),
           require("../assets/images/IMG_sheet_small1.webp"),
         ],
@@ -46,9 +48,9 @@ export const allProducts = [
           weight: "50kg per packing",
         },
         slideshow: [
-          require("../assets/images/IMG_scrap_big1.webp"),
-          require("../assets/images/product--thumb1.jpeg"),
-          require("../assets/images/product--thumb3.jpeg"),
+          require("../assets/images/IMG_Bulkfive.webp"),
+          require("../assets/images/IMG_Bulkone.webp"),
+          require("../assets/images/IMG_Bulkthree.webp"),
         ],
       },
       {
@@ -63,8 +65,8 @@ export const allProducts = [
         },
         slideshow: [
           require("../assets/images/IMG_scrap_big2.webp"),
-          require("../assets/images/IMG_scrap_small2.jpg"),
-          require("../assets/images/IMG_scrap_small1.jpg"),
+          require("../assets/images/IMG_scrap_small2.webp"),
+          require("../assets/images/IMG_scrap_small1.webp"),
         ],
       },
     ],

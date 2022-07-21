@@ -31,11 +31,9 @@
           </Carousel>
         </div>
         <div class="right md:max-w-[40%] max-w-full">
-          <!-- <h1 class="">{{ selectedVariation.description }}:</h1> -->
           <p class="text-[17px] font-Poppins leading-[30px] mb-4">
             {{ selectedVariation.description }}:
           </p>
-          <!-- {{ selectedVariation }} -->
           <div class="relative mb-4">
             <ul
               v-for="(standard, index) in selectedVariation.standards"
@@ -73,7 +71,7 @@
           <div class="relative mb-4">
             <p class="mb-4 font-bold text-[19px]">Contact us for pricing</p>
             <button
-              class="email py-2 px-3 bg-[transparent] border-[2px] border-mainBlue rounded-[4px] text-mainBlue text-[17px] block my-2 relative pulsing"
+              class="email py-2 px-3 bg-[transparent] border-[2px] border-mainBlue rounded-[4px] text-mainBlue text-[17px] block my-2 mx-2 relative pulsing"
             >
               <a href="mailto:ugraphix2001@gmail.com" class="z-[2]"
                 >Send an email</a
@@ -83,7 +81,7 @@
               ></div> -->
             </button>
             <button
-              class="call-text py-2 px-3 bg-[transparent] border-[2px] border-[#25D366] rounded-[4px] text-[#25D366] text-[17px] block my-2 relative pulsing"
+              class="call-text py-2 px-3 bg-[transparent] border-[2px] border-[#25D366] rounded-[4px] text-[#25D366] text-[17px] block my-2 mx-2 relative pulsing"
             >
               <a href="tel:+2348094709168" class="z-[2]">Phone call/WhatsApp</a>
               <!-- <div
@@ -126,13 +124,6 @@ export default {
     // eslint-disable-next-line no-unused-vars
     const getCurrentFullPath = router.currentRoute.value.fullPath;
 
-    // const getCurrentProduct = (query, slug, action) => {
-    //   const something = query.filter((q) => q.slug === slug);
-
-    //   store.dispatch(action, something);
-    //   console.log(selectedVariation.value, "current product");
-    //   return something;
-    // };
     const getCurrentVariation = (slug, action) => {
       const allVariations = selectedProduct.value.productVariations;
       const something = allVariations.filter((q) => slug.includes(q.name));
@@ -141,11 +132,6 @@ export default {
       return something[0];
     };
     onMounted(() => {
-      //   getCurrentProduct(
-      //     allProducts.value,
-      //     getPreviousRouteSlug,
-      //     "setSelectedProduct"
-      //   );
       getCurrentVariation(getCurrentFullPath, "setSelectedVariation");
     });
     return {

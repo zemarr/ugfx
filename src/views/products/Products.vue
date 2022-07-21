@@ -6,7 +6,7 @@
         <h1
           class="font-medium text-[50px] leading-[70px] !font-Poppins mb-4 tracking-[-2.5px]"
         >
-          MUSCOVITE MICA IN NIGERIA.
+          MUSCOVITE MICA FOR SALE IN NIGERIA.
         </h1>
         <p
           class="!font-Poppins text-[18px] leading-[30px] font-normal tracking-[-0.6px]"
