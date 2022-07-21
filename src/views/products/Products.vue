@@ -14,7 +14,7 @@
           Mica is found in various parts of the Nigeria, with the major
           muscovite mica mineral deposits largely found in the Northern part of
           Nigeria, with reasonable deposits in some parts of the Western parts
-          of Nigeria in places like Ibadan.<br /><br />
+          of Nigeria like Oyo and Ogun states.<br /><br />
           We represent an array of miners in both parts of Nigeria.
         </p>
       </div>
