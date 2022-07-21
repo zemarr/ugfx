@@ -25,7 +25,7 @@ export default {
     const autoPlay = () => {
       setInterval(() => {
         changeSlide();
-      }, 5000);
+      }, 3000);
     };
     const carouselRef = ref([]);
 
