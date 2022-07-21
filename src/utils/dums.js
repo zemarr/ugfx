@@ -2,7 +2,7 @@ export const allProducts = [
   {
     id: 1,
     slug: "mica",
-    productName: "Mica Muscovite",
+    productName: "Muscovite Mica",
     short_description:
       "Mica is found in various parts of the Nigeria, with the major muscovite mica mineral deposits largely found in the Northern part of Nigeria, with reasonable deposits in some parts of ",
     full_description:

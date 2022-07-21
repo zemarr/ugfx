@@ -1,5 +1,7 @@
 <template>
   <div class="min-h-[100vh]">
+    <!-- {{ selectedVariation }} -->
+    <span class="hidden">{{ selectedVariation }}</span>
     <div class="relative max-w-[1220px] mx-auto mb-[48px] px-[20px] py-16">
       <BreadCrumb />
       <div class="head flex flex-col justify-between w-full py-3 mb-16">
@@ -12,7 +14,6 @@
       <div
         class="thumbImg h-auto min-h-[250px] w-full mb-3 overflow-hidden rounded-[4px] flex items-start justify-start md:flex-row flex-col"
       >
-        <!-- {{ selectedVariation }} -->
         <div
           class="left h-screen max-h-[530px] md:w-[60%] w-full md:mr-4 mr-0 mb-10 md:mb-0 overflow-hidden rounded-[4px]"
         >
@@ -121,15 +122,16 @@ export default {
     // const allProductsData = ref(dummyData);
     const allProducts = computed(() => store.state.products);
     const selectedProduct = computed(() => store.state.selectedProduct);
-    const selectedVariation = computed(() => store.state.selectedVariation);
     const getPreviousRouteSlug = router.currentRoute.value.params.id;
     const getCurrentRouteSlug = router.currentRoute.value.params.details;
     // eslint-disable-next-line no-unused-vars
     const getCurrentFullPath = router.currentRoute.value.fullPath;
 
     const getCurrentVariation = (slug, action) => {
-      const allVariations = selectedProduct.value.productVariations;
-      const something = allVariations.filter((q) => slug.includes(q.name));
+      // const allVariations = selectedProduct.value.productVariations;
+      const something = selectedProduct.value.productVariations.filter((q) =>
+        slug.includes(q.name)
+      );
       store.dispatch(action, something[0]);
       //   console.log(something[0], "currentVariation");
       return something[0];
@@ -141,7 +143,7 @@ export default {
       getCurrentRouteSlug,
       getPreviousRouteSlug,
       selectedProduct,
-      selectedVariation,
+      selectedVariation: computed(() => store.state.selectedVariation),
       allProducts,
     };
   },
