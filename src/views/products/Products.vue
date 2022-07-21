@@ -105,8 +105,8 @@
 
 <script>
 // @ is an alias to /src
-// import { allProducts as dummyData } from "@/utils/dums.js";
-import { computed } from "vue";
+import { allProducts as productsData } from "@/utils/dums.js";
+import { computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import Carousel from "@/components/Carousel/CarouselWrap.vue";
 import CarouselSlide from "@/components/Carousel/CarouselSlide.vue";
@@ -135,6 +135,9 @@ export default {
       const productBannerUrls = allBanners[productIndex].slideshow[imgIndex];
       return productBannerUrls;
     };
+    onMounted(() => {
+      store.dispatch("setAllProducts", productsData);
+    });
     return {
       // viewList,
       // allBanners,

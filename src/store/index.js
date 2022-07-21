@@ -1,10 +1,10 @@
 import { createStore } from "vuex";
 import createPersistedState from "vuex-persistedstate";
-import dummyData from "@/utils/dums";
+// import dummyData from "@/utils/dums";
 
 export default createStore({
   state: {
-    products: dummyData,
+    products: [],
     selectedProduct: [],
     selectedVariation: [],
   },
@@ -21,6 +21,9 @@ export default createStore({
     },
   },
   actions: {
+    setAllProducts({ commit }, products) {
+      commit("setAllProducts", products);
+    },
     setSelectedProduct({ commit }, selectedProduct) {
       commit("setSelectedProduct", selectedProduct);
     },

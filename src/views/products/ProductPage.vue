@@ -103,20 +103,21 @@ export default {
     };
     const currentVariationData = () => {
       allProductVariations.value = currentProductData.value.productVariations;
+      console.log(allProductVariations.value, "weeeeee");
     };
     const getCurrentProduct = (query, slug, action) => {
       const something = query.filter((q) => q.slug === slug);
       store.dispatch(action, something[0]);
       return something;
     };
+    getCurrentProduct(
+      allProducts.value,
+      getCurrentRouteSlug,
+      "setSelectedProduct"
+    );
     onMounted(() => {
       getCurrentData();
       currentVariationData();
-      getCurrentProduct(
-        allProducts.value,
-        getCurrentRouteSlug,
-        "setSelectedProduct"
-      );
     });
     return {
       allProducts,

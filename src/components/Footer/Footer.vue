@@ -50,6 +50,12 @@
         >
           Tel: <a href="tel:+2348094709168">+2348094709168</a>
         </p>
+        <p
+          class="text-[16px] leading-[30px] font-normal text-white font-Graphik"
+        >
+          Email:
+          <a href="mailto:ugraphix2001@gmail.com">ugraphix2001@gmail.com</a>
+        </p>
       </div>
     </div>
   </div>

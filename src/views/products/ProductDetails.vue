@@ -48,7 +48,7 @@
             </ul>
           </div>
           <div class="relative mb-4">
-            <p class="mb-4 font-bold text-[19px]">Properties</p>
+            <p class="mb-4 font-bold text-[19px] underline">Properties</p>
             <ul>
               <li>
                 <span class="font-bold font-Graphik text-[17px]"
@@ -68,7 +68,12 @@
               </li>
             </ul>
           </div>
-          <div class="relative mb-4">
+          <div class="relative mb-2 font-Poppins">
+            <h5 class="font-medium">
+              For pre-shipment inspection, please indicate your interest.
+            </h5>
+          </div>
+          <div class="relative mb-4 font-Poppins">
             <p class="mb-4 font-bold text-[19px]">Contact us for pricing</p>
             <button
               class="email py-2 px-3 bg-[transparent] border-[2px] border-mainBlue rounded-[4px] text-mainBlue text-[17px] block my-2 mx-2 relative pulsing"
@@ -96,7 +101,7 @@
 </template>
 
 <script>
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import BreadCrumb from "../../components/BreadCrumb.vue";
 // import { allProducts as dummyData, productVariations } from '@/utils/dums.js';
@@ -117,8 +122,6 @@ export default {
     const allProducts = computed(() => store.state.products);
     const selectedProduct = computed(() => store.state.selectedProduct);
     const selectedVariation = computed(() => store.state.selectedVariation);
-    const selectedVariationImages = ref([]);
-    const thisProductVariations = ref(selectedVariation.value);
     const getPreviousRouteSlug = router.currentRoute.value.params.id;
     const getCurrentRouteSlug = router.currentRoute.value.params.details;
     // eslint-disable-next-line no-unused-vars
@@ -135,10 +138,8 @@ export default {
       getCurrentVariation(getCurrentFullPath, "setSelectedVariation");
     });
     return {
-      selectedVariationImages,
       getCurrentRouteSlug,
       getPreviousRouteSlug,
-      thisProductVariations,
       selectedProduct,
       selectedVariation,
       allProducts,

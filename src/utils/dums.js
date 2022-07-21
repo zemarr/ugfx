@@ -6,7 +6,7 @@ export const allProducts = [
     short_description:
       "Mica is found in various parts of the Nigeria, with the major muscovite mica mineral deposits largely found in the Northern part of Nigeria, with reasonable deposits in some parts of ",
     full_description:
-      "Mica is found in various parts of the Nigeria, with the major muscovite mica mineral deposits largely found in the Northern part of Nigeria, with reasonable deposits in some parts of the Western parts of Nigeria in places like Ibadan.",
+      "Mica is found in various parts of the Nigeria, with the major muscovite mica mineral deposits largely found in the Northern part of Nigeria, with reasonable deposits in some parts of the Western parts of Nigeria like Oyo and Ogun states.",
     origins: ["Ogun", "Osun", "Kaduna"],
     slideshow: [
       require("../assets/images/IMG_Bulktwo.webp"),
@@ -23,8 +23,10 @@ export const allProducts = [
         standards: [
           "Clear and transparent",
           "No inclusions",
+          "No air bubbles",
           "No waves",
           "Packed at 5kg",
+          "pre-shipment inspection",
         ],
         properties: {
           thickness: "0.2mm - 2mm",
@@ -40,11 +42,15 @@ export const allProducts = [
       {
         name: "bulk",
         description:
-          "We have high quality selected bulk of Mica. They come with the following standards",
-        standards: ["No mud", "Packed in 50kg sacks"],
+          "We have high quality selected Mica bulk. They come with the following standards",
+        standards: [
+          "No mud",
+          "Packed in 50kg sacks",
+          "pre-shipment inspection",
+        ],
         properties: {
-          thickness: "> 2mm",
-          sizes: "varies",
+          thickness: "-",
+          sizes: "Bulk",
           weight: "50kg per packing",
         },
         slideshow: [
@@ -56,12 +62,16 @@ export const allProducts = [
       {
         name: "scrap",
         description:
-          "We have scrap of Mica after sorting. They come with following standards",
-        standards: ["No mud and Packed in 50kg sacks"],
+          "We have Mica scrap after sorting. They come with following standards",
+        standards: [
+          "No mud",
+          "Packed in 50kg sacks",
+          "pre-shipment inspection",
+        ],
         properties: {
-          thickness: "varies",
-          sizes: "varies",
-          weight: "50kg per packing",
+          thickness: "-",
+          sizes: "vary",
+          weight: "-",
         },
         slideshow: [
           require("../assets/images/IMG_scrap_big2.webp"),
