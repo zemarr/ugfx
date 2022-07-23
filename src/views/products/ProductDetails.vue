@@ -71,7 +71,8 @@
           </div>
           <div class="relative mb-2 font-Poppins">
             <h5 class="font-medium">
-              For pre-shipment inspection, please indicate your interest.
+              Reputable third-party pre-shipment inspectors available for
+              recommendation
             </h5>
           </div>
           <div class="relative mb-4 font-Poppins">
@@ -89,7 +90,7 @@
             <button
               class="call-text py-2 px-3 bg-[transparent] border-[2px] border-[#25D366] rounded-[4px] text-[#25D366] text-[17px] block my-2 mx-2 relative pulsing"
             >
-              <a href="tel:+2348094709168" class="z-[2]">Phone call/WhatsApp</a>
+              <a href="https://wa.me/2348094709168" class="z-[2]">WhatsApp</a>
               <!-- <div
                 class="fill pulsing absolute w-full top-0 left-0 h-full bg-[#25d3652d] transition-all duration-500 z-[1]"
               ></div> -->

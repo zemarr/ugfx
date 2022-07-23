@@ -26,7 +26,6 @@ export const allProducts = [
           "No air bubbles",
           "No waves",
           "Packed at 5kg",
-          "pre-shipment inspection",
         ],
         properties: {
           thickness: "0.2mm - 2mm",
@@ -43,11 +42,7 @@ export const allProducts = [
         name: "bulk",
         description:
           "We have high quality selected Mica bulk. They come with the following standards",
-        standards: [
-          "No mud",
-          "Packed in 50kg sacks",
-          "pre-shipment inspection",
-        ],
+        standards: ["No mud", "Packed in 50kg sacks"],
         properties: {
           thickness: "-",
           sizes: "Bulk",
@@ -63,11 +58,7 @@ export const allProducts = [
         name: "scrap",
         description:
           "We have Mica scrap after sorting. They come with following standards",
-        standards: [
-          "No mud",
-          "Packed in 50kg sacks",
-          "pre-shipment inspection",
-        ],
+        standards: ["No mud", "Packed in 50kg sacks"],
         properties: {
           thickness: "-",
           sizes: "vary",
