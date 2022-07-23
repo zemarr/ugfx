@@ -107,7 +107,7 @@
 // @ is an alias to /src
 import { allProducts as productsData } from "@/utils/dums.js";
 import { computed, onMounted } from "vue";
-import { useRouter } from "vue-router";
+// import { useRouter } from "vue-router";
 import Carousel from "@/components/Carousel/CarouselWrap.vue";
 import CarouselSlide from "@/components/Carousel/CarouselSlide.vue";
 // import BreadCrumb from "@/components/BreadCrumb.vue";
@@ -122,11 +122,11 @@ export default {
   },
   setup() {
     const store = useStore();
-    const router = useRouter();
+    // const router = useRouter();
     const allProducts = computed(() => store.state.products);
 
-    const getCurrentRouteSlug = router.currentRoute.value.fullPath;
-    console.log(getCurrentRouteSlug);
+    // const getCurrentRouteSlug = router.currentRoute.value.fullPath;
+    // console.log(getCurrentRouteSlug);
     // const viewList = (id) => {
     //   router.push({ name: "Product Page", params: { id: id } });
     // };

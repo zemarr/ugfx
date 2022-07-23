@@ -91,8 +91,8 @@ export default {
     const allProductVariations = ref();
 
     const getCurrentRouteSlug = router.currentRoute.value.params.id;
-    const getCurrentFullPath = router.currentRoute.value.fullPath;
-    console.log(getCurrentFullPath);
+    // const getCurrentFullPath = router.currentRoute.value.fullPath;
+    // console.log(getCurrentFullPath);
 
     const getCurrentData = () => {
       return allProducts.value.filter((product) => {
@@ -103,7 +103,7 @@ export default {
     };
     const currentVariationData = () => {
       allProductVariations.value = currentProductData.value.productVariations;
-      console.log(allProductVariations.value, "weeeeee");
+      // console.log(allProductVariations.value, "weeeeee");
     };
     const getCurrentProduct = (query, slug, action) => {
       const something = query.filter((q) => q.slug === slug);
