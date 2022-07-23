@@ -17,6 +17,7 @@ module.exports = {
         Poppins: ["Poppins", "sans-serif"],
         Graphik: ["Graphik", "sans-serif"],
         ubuntu: ["ubuntu", "sans-serif"],
+        tangerine: ["Tangerine", "cursive"],
       },
     },
   },
