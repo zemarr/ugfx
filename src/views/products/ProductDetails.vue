@@ -69,12 +69,12 @@
               </li>
             </ul>
           </div>
-          <div class="relative mb-2 font-Poppins">
+          <!-- <div class="relative mb-2 font-Poppins">
             <h5 class="font-medium">
               Reputable third-party pre-shipment inspectors available for
               recommendation
             </h5>
-          </div>
+          </div> -->
           <div class="relative mb-4 font-Poppins">
             <p class="mb-4 font-bold text-[19px]">Contact us for pricing</p>
             <button
