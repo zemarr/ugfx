@@ -48,7 +48,7 @@
             >
               {{ getCurrentRouteSlug }} {{ variation.name }}
             </h4>
-            <p class="font-Poppins font-normal text-[15px] leading-[20px]">
+            <p class="font-Poppins font-normal text-[14px] leading-[20px]">
               View more about
               <span class="capitalize"
                 >{{ getCurrentRouteSlug }} {{ variation.name }}</span

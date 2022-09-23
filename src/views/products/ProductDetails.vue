@@ -68,6 +68,7 @@
                 {{ selectedVariation.properties.weight }}
               </li>
             </ul>
+            <div class="mt-4" v-html="selectedVariation.caution"></div>
           </div>
           <!-- <div class="relative mb-2 font-Poppins">
             <h5 class="font-medium">
