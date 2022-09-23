@@ -46,7 +46,7 @@
             <h4
               class="font-Poppins font-semibold sm:text-[24px] text-[16px] sm:leading-[28px] leading-[20px] mb-1 capitalize"
             >
-              {{ getCurrentRouteSlug }} {{ variation.name }}
+              {{ variation.name }}
             </h4>
             <p class="font-Poppins font-normal text-[14px] leading-[20px]">
               View more about

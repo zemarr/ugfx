@@ -8,7 +8,7 @@
         <h1
           class="font-medium text-[50px] leading-[70px] !font-Poppins mb-4 tracking-[-2.5px] capitalize"
         >
-          {{ getPreviousRouteSlug }} {{ getCurrentRouteSlug }}
+          {{ getCurrentRouteSlug }}
         </h1>
       </div>
       <div

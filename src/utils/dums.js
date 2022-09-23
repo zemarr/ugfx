@@ -17,7 +17,7 @@ export const allProducts = [
     ],
     productVariations: [
       {
-        name: "sheet",
+        name: "mica sheet",
         description:
           "We have high quality selected Mica sheets. Presently we are over booked and not accepting order for mica block (sheet). From October 30th we shall be resume accepting orders for mica sheet.",
         standards: [
@@ -57,7 +57,7 @@ export const allProducts = [
       //   ],
       // },
       {
-        name: "crude scrap",
+        name: "mica crude scrap",
         description:
           'Our crude scrap comes in big sizes, sometimes more than 18". It has all best properties of mica block (sheet) but only without clear transparency. Unsurprisingly some very clean block mica is recoverable, between 1-5% are clean large sizes mica sheet, yet the price is the price of scrap mica. It is minimally entangled and very easy to open or split.',
         standards: ["No mud", "Packed in 50kg sacks"],
