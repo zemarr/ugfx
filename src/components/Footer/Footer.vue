@@ -70,7 +70,7 @@
         href="https://chukwu.com.ng"
         target="_blank"
         class="text-[13px] leading-[20px] font-light text-white"
-        >Created with ❤️ by Chukwu</a
+        >Built with ❤️ by Chukwu</a
       >
     </div>
   </div>
